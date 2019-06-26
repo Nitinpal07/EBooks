@@ -27,5 +27,7 @@ public class FragmentTab1 extends Fragment {
             }
         });
         return root;
+
+
     }
 }
