@@ -20,8 +20,6 @@ import nitin.luckyproject.e_books.R;
  */
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
-    @StringRes
-    private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_2,R.string.tab_text_3,R.string.tab_text_4};
     private final Context mContext;
 
     public SectionsPagerAdapter(Context context, FragmentManager fm) {

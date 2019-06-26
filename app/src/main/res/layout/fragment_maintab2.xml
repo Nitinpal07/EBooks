@@ -1,20 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Aqua"
     tools:context=".ui.main.PlaceholderFragment">
 
     <TextView
         android:id="@+id/section_label2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/tab_text_2"
+        android:layout_height="wrap_content"
+        android:text="@string/searchbook"
         android:layout_gravity="center_vertical"
         android:gravity="center"
-        android:background="@color/Aqua"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:textAppearance="?android:textAppearanceLarge"
         />
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Search"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="50dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textAppearance="?android:textAppearanceLarge"
+        />
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Search"
+        android:layout_marginStart="150dp"
+        android:textColor="@color/white"
+        android:background="@color/design_default_color_primary_dark"/>
 
 </LinearLayout>
