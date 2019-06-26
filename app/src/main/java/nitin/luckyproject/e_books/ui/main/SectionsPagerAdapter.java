@@ -8,6 +8,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
+import nitin.luckyproject.e_books.FragmentTab1;
+import nitin.luckyproject.e_books.FragmentTab2;
+import nitin.luckyproject.e_books.FragmentTab3;
+import nitin.luckyproject.e_books.FragmentTab4;
 import nitin.luckyproject.e_books.R;
 
 /**
@@ -29,16 +33,20 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         // getItem is called to instantiate the fragment for the given page.
         // Return a PlaceholderFragment (defined as a static inner class below).
-        return PlaceholderFragment.newInstance(position + 1);
+        switch (position){
+            case 0:
+                return new FragmentTab1();
+            case 1:
+                return new FragmentTab2();
+            case 2:
+                return new FragmentTab3();
+            case 3:
+                return new FragmentTab4();
+                default:
+                    return null;
+
+        }
     }
-
-
-    @Override
-    public CharSequence getPageTitle(int position) {
-        return null;
-    }
-
-
 
     @Override
     public int getCount() {
