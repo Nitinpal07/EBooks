@@ -2,17 +2,14 @@ package nitin.luckyproject.e_books.ui.main;
 
 import android.content.Context;
 
-import androidx.annotation.Nullable;
-import androidx.annotation.StringRes;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import nitin.luckyproject.e_books.FragmentTab1;
-import nitin.luckyproject.e_books.FragmentTab2;
-import nitin.luckyproject.e_books.FragmentTab3;
-import nitin.luckyproject.e_books.FragmentTab4;
-import nitin.luckyproject.e_books.R;
+import nitin.luckyproject.e_books.FragmentTabs.FragmentTab1;
+import nitin.luckyproject.e_books.FragmentTabs.FragmentTab2;
+import nitin.luckyproject.e_books.FragmentTabs.FragmentTab3;
+import nitin.luckyproject.e_books.FragmentTabs.FragmentTab4;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
